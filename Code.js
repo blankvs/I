@@ -24,3 +24,43 @@ function fakeBin(x){
     }
     return arr
   };
+
+//Your task is to create a function that does four basic mathematical operations.
+//The function should take three arguments - operation(string/char), value1(number), value2(number).
+//The function should return result of numbers after applying the chosen operation.
+
+  function basicOp(operation, value1, value2)
+{
+  if (operation == '+')
+    return value1 + value2;
+  if (operation == '-')
+    return value1 - value2;
+  if (operation =='*')
+    return value1 * value2; 
+  if (operation == '/')
+    return value1 / value2;
+}
+
+//Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
+
+function invert(array) {
+   
+  let newArr = []
+  
+  for ( let i = 0; i < array.length; i++) {
+    newArr.push(-array[i])  
+  }
+  return newArr
+}
+
+//Given an array of integers, return a new array with each value doubled.
+
+function maps(x){
+   
+  let newArr = []
+  
+  for ( let i = 0; i < x.length; i++ ) {
+    newArr.push(x[i] * 2)
+  }
+  return newArr
+}
