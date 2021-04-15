@@ -64,3 +64,42 @@ function maps(x){
   }
   return newArr
 }
+
+//This kata is about multiplying a given number by eight if it is an even number and by nine otherwise.
+
+function simpleMultiplication(number) {
+    
+  if ( number % 2 === 0) {
+    return number * 8
+  } else {
+    return number * 9
+  }
+  
+}
+
+//The first century spans from the year 1 up to and including the year 100, The second - from the year 101 up to and including the year 200, etc.
+
+function century(year) {
+  return Math.ceil(year / 100)
+}
+
+//Create a function (or write a script in Shell) that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+
+function even_or_odd(number) {
+  
+  if (number % 2 === 0) {
+    return "Even"
+  } else {
+    return "Odd"
+  }
+}
+
+//A hero is on his way to the castle to complete his mission. However, he's been told that the castle is surrounded with a couple of powerful dragons! each dragon takes 2 bullets to be defeated, our hero has no idea how many bullets he should carry.. Assuming he's gonna grab a specific given number of bullets and move forward to fight another specific given number of dragons, will he survive?
+
+function hero(bullets, dragons){
+  if ( bullets / 2 >= dragons) {
+    return true
+  } else {
+    return false
+  }
+}
